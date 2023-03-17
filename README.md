@@ -2,7 +2,7 @@
 
 Team members:
  * `GAL PETKOVŠEK`, `63170020`, `gp1914@student.uni-lj.si`
- * `MARIJA MAROLT`, `STUDENT ID`, `STUDENT E-MAIL`
+ * `MARIJA MAROLT`, `63170017`, `mm7522@student.uni-lj.si`
  * `JANA ŠTREMFELJ`, `63170284`, `js7437@student.uni-lj.si`
  
 Group public acronym/name: `THINK OF PUBLIC STRING FOR YOUR GROUP`
