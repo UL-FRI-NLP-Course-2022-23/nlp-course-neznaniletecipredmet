@@ -5,5 +5,5 @@ Team members:
  * `MARIJA MAROLT`, `63170017`, `mm7522@student.uni-lj.si`
  * `JANA ŠTREMFELJ`, `63170284`, `js7437@student.uni-lj.si`
  
-Group public acronym/name: `THINK OF PUBLIC STRING FOR YOUR GROUP`
+Group public acronym/name: `KARABIN`
  > This value will be used for publishing marks/scores. It will be known only to you and not you colleagues.
