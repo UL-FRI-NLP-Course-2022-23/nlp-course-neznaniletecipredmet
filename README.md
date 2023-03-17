@@ -1,7 +1,7 @@
 # Natural language processing course 2022/23: `Put name of your project here`
 
 Team members:
- * `GAL PETKOVŠEK`, 63170020`, `gp1914@student.uni-lj.si`
+ * `GAL PETKOVŠEK`, `63170020`, `gp1914@student.uni-lj.si`
  * `MARIJA MAROLT`, `STUDENT ID`, `STUDENT E-MAIL`
  * `JANA ŠTREMFELJ`, `63170284`, `js7437@student.uni-lj.si`
  
