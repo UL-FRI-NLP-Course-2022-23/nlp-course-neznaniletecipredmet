@@ -1,4 +1,4 @@
-# Natural language processing course 2022/23: `Put name of your project here`
+# Natural language processing course 2022/23: `Literacy situation models knowledge base creation`
 
 Team members:
  * `GAL PETKOVŠEK`, `63170020`, `gp1914@student.uni-lj.si`
