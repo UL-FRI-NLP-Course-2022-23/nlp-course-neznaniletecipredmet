@@ -7,3 +7,7 @@ Team members:
  
 Group public acronym/name: `KARABIN`
  > This value will be used for publishing marks/scores. It will be known only to you and not you colleagues.
+
+## Environment setup
+To install all required dependencies for this project run: \
+```pip install -r requirements.txt```
