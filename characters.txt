@@ -1,5 +1,6 @@
 kralj
 kraljica
+kraljevič
 princ
 princesa
 škrat
@@ -88,3 +89,18 @@ kokoš
 sovica
 ptič
 zver
+hrošč
+čebelar
+vrtnar
+mlinar
+razbojnik
+kresnička
+raček
+gospodar
+gusar
+volkodlak
+vitez
+oproda
+boginja
+gosenica
+sova
