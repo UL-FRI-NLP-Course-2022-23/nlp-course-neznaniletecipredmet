@@ -76,7 +76,6 @@ pingvin
 lisica
 ovca
 kmet
-slon
 pes
 žirafa
 želva
@@ -87,7 +86,6 @@ vrabec
 morski pes
 polž
 zebra
-slon
 kit
 samorog
 zmaj
@@ -108,7 +106,6 @@ sovica
 kača
 metulj
 medved
-slon
 noj
 kamela
 lev
