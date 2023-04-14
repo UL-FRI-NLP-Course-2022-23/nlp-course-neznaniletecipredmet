@@ -12,7 +12,6 @@ konj
 mornar
 kmet
 ribič
-ptica
 žaba
 miš
 metulj
@@ -34,7 +33,6 @@ slon
 nilski konj
 pingvin
 pandabear
-polarni medved
 kit
 rak
 kozel
@@ -45,7 +43,6 @@ orjak
 muca
 krokodil
 opica
-leteči konj
 voluhar
 riba
 psiček
@@ -53,7 +50,6 @@ zajček
 ježek
 mravlja
 krava
-raca
 gos
 orel
 vrana
@@ -63,7 +59,6 @@ lisjak
 ptica
 kobilica
 čebela
-kobilica
 leopard
 jaguar
 tigar
@@ -75,7 +70,6 @@ netopir
 pingvin
 lisica
 ovca
-kmet
 pes
 žirafa
 želva
@@ -83,32 +77,14 @@ raca
 krokodil
 kozliček
 vrabec
-morski pes
-polž
 zebra
-kit
 samorog
-zmaj
-princ
 vila
 knez
-zmaj
-palček
-kmet
 kovač
-riba
-miš
-konj
 orač
 zlodej
 kokoš
 sovica
-kača
-metulj
-medved
-noj
-kamela
-lev
-žirafa
 ptič
 zver
