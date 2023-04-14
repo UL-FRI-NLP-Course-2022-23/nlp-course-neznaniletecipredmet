@@ -3,7 +3,6 @@ kraljica
 princ
 princesa
 škrat
-vila
 čarovnik
 čarovnica
 zmaj
@@ -116,4 +115,3 @@ lev
 žirafa
 ptič
 zver
-čebela
