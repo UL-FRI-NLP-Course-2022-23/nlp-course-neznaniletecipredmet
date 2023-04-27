@@ -8,7 +8,7 @@ def find_character_occurrence_levenshtein(character: str, nlp_results, threshold
     # Iterate over all words
     for token in nlp_results.iter_tokens():
         # Get lemma and test if lemma is by levenshtein close enough to character
-        lemma = token.words[0].lemma
+        lemma = token.words[0].lemma.lower()
         if(ls.ratio(lemma, character) > threshold and token.words[0].upos in ["NOUN", "PROPN"] and token.ner not in ["B-PER", "I-PER"]):
             results.append(token)
     
@@ -72,7 +72,7 @@ def find_entities_of_ner(nlp_results, threshold: float = 0.95) -> Dict:
 
     for token in nlp_results.iter_tokens():
         if(token.ner == "B-PER" or token.ner == "I-PER"):
-            lemma = token.words[0].lemma
+            lemma = token.words[0].lemma.lower()
 
             already = None
             for r in results:
@@ -86,9 +86,8 @@ def find_entities_of_ner(nlp_results, threshold: float = 0.95) -> Dict:
             
     return results
 
-def find_all_entities(text: str, character_file: str, threshold: float = 0.95) -> Dict:
+def find_all_entities_old(text: str, character_file: str, nlp, threshold: float = 0.95) -> Dict:
     # Compute classla results
-    nlp = classla.Pipeline('sl')
     nlp_results = nlp(text)
 
     results = find_entities_from_list(character_file, nlp_results, threshold)
@@ -99,5 +98,35 @@ def find_all_entities(text: str, character_file: str, threshold: float = 0.95) -
             results[res_ner] += results_ner[res_ner]
         else:
             results[res_ner] = results_ner[res_ner]
+
+    return results
+
+
+def find_all_entities(text: str, character_file: str, nlp, threshold: float = 0.95) -> Dict:
+    # Compute classla results
+    nlp_results = nlp(text)
+
+    results = find_entities_from_list(character_file, nlp_results, threshold)
+    results_ner = find_entities_of_ner(nlp_results, threshold)
+
+    for res_ner in results_ner:
+        if(res_ner in results):
+            results[res_ner] += results_ner[res_ner]
+        else:
+            results[res_ner] = results_ner[res_ner]
+
+    c = 0
+    for r in results:
+        c += len(results[r])
+
+    limit = int(c*0.1)
+
+    to_remove = []
+    for r in results:
+        if(limit > len(results[r])):
+            to_remove.append(r)
+
+    for to_r in to_remove:
+        del results[to_r]
 
     return results
