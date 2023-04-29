@@ -60,4 +60,4 @@ def print_output(score):
     print("ner words recall:", words_recall)
 
 
-print_output(mean_score("data/farytales/characters/", "data/farytales/ner_output/", "data/farytales/ner_output2/"))
+print_output(mean_score("data/farytales/characters/", "data/farytales/ner_output2/", "data/farytales/coreference/"))
