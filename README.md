@@ -26,3 +26,15 @@ To use the ner pipeline for stories we can follow the example in `calculate_ner.
 ### Coreference resolution
 
 ### Visualization
+
+
+# TODOs:
+* Marija extend the character list
+* Marija add visualization to repo
+* Marija add results to repo
+* Jana add coreference module to repo
+* Implement the relationship extraction
+* Implement the relationship classification
+* Implement character classification
+* Implement the protagonist classification
+* Implement character feature extraction
