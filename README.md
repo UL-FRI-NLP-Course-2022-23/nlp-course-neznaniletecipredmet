@@ -18,6 +18,7 @@ To prepare the environment for the NER process you need to execute the following
 TODO: Add env setup for coreference and possibly visualization and evaluation
 
 ## Component usage
+This section describes the general pipeline and structure of our repo. Before this make shur that the environment is set up.
 
 ### Name entity recognition
 To use the ner pipeline for stories we can follow the example in `calculate_ner.py`. We first need to initialize the classla model (the easiest way to do that is just to construct a pipeline that includes processor tokenizer, ner, pos and lemma). After that we need to have a txt file of all predefined characters to search for (can be located in `src/resources/characters.txt`). We then input all those values into find_all_entities function (located in `src/name_entity_recognition.py`). The output of the function is a dictionary which has characters for keys and a list of tuples that represent occurrences of those entities in the text as values.
