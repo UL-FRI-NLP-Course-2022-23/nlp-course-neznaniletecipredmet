@@ -29,12 +29,13 @@ To use the ner pipeline for stories we can follow the example in `calculate_ner.
 ### Coreference resolution
 From https://www.clarin.si/repository/xmlui/handle/11356/1773 download the model and use code (common.py, data.py, metrics.py, utils.py and contextual_model_bert.py) from the https://github.com/clarinsi/SloCOREF. Put all files into the directory from clarin and run coreference function from the coreference.py file. The input parameter of the voreference function:
 * text - the text the model predicts the coreference
-* filename - json file that includes dictionary of entities from the name recognition and its positions
+* filename - json file that contains dictionary of entities from the name recognition and its starting/ending positions
 * trust - the threshold for the mention score
 * window_size - the length of the substring of a text
 * offset - the offset of the start of the next substring
 * deviation - the deviation around the position of the entity
 
+The output of the function is the modified dictionary of the entities and its starting/ending positions.
 
 ### Visualization
 To initiate the visualization, access your terminal and navigate to the directory where the project is stored (*nlp-course-neznaniletecipredmet*). Execute the command `python -m http.server 8000` and proceed to open your preferred web browser and access `http:localhost:8000`.
