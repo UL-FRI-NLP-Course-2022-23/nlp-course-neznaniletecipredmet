@@ -47,8 +47,8 @@ Mean and standard deviation were utilized to report on the precision and recall 
 ```
 ner precision: (0.8084, 0.0457)
 ner recall: (0.9591, 0.0234)
-crr precision: (0.6104, 0.0639)
-crr recall: (0.6951, 0.0573)
+crr precision: (0.8039, 0.047)
+crr recall: (0.9067, 0.0299)
 ner words precision: (0.0, 0.0)
 ner words recall: (0.0, 0.0)
 ```
