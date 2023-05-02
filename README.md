@@ -45,10 +45,10 @@ To initiate the visualization, access your terminal and navigate to the director
 The following results were obtained for the story *Janko in Metka*.
 Mean and standard deviation were utilized to report on the precision and recall of the outputs obtained from both the named entity recognition (NER) and coreference models.
 ```
-ner precision: (0.8789, 0.0437)
-ner recall: (0.6427, 0.0874)
-crr precision: (0.8808, 0.0439)
-crr recall: (0.621, 0.0913)
+ner precision: (0.8084, 0.0457)
+ner recall: (0.9591, 0.0234)
+crr precision: (0.6104, 0.0639)
+crr recall: (0.6951, 0.0573)
 ner words precision: (0.0, 0.0)
 ner words recall: (0.0, 0.0)
 ```
