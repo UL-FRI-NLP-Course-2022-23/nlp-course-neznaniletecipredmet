@@ -197,12 +197,13 @@ def coreference(text, filename, trust=0.5, window_size=1000, offset=500, deviati
 def run_all():
     directory = "../data/farytales/stories"
     for filename in os.listdir(directory):
+        print(filename)
         f = os.path.join(directory, filename)
         with open(f, encoding="utf8") as file:
             text = file.read()
         name = os.path.splitext(filename)[0]
         result = coreference(remove_new_lines(text), name, trust=0.6)
-        with open("../data/farytales/coreference/"+name+".json", "w") as outfile:
-            json.dump(result, outfile)
+        with open("../data/farytales/coreference/"+name+".json", "w", encoding="utf-8") as outfile:
+            json.dump(result, outfile, ensure_ascii=False)
 
 
