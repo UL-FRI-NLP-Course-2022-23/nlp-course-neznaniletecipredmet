@@ -18,8 +18,12 @@ def evaluate_outputs(gt_path, ner_path, crr_path):
         crr_output = json.load(json_file)
 
     ner_tp = gt.keys() & ner_output.keys()
-    ner_precision = len(ner_tp) / len(ner_output)
-    ner_recall = len(ner_tp) / len(gt)
+    if(len(ner_tp) == 0):
+        ner_precision = 0
+        ner_recall = 0
+    else:
+        ner_precision = len(ner_tp) / len(ner_output)
+        ner_recall = len(ner_tp) / len(gt)
 
     crr_tp = gt.keys() & crr_output.keys()
     crr_precision = len(crr_tp) / len(crr_output)
@@ -59,5 +63,20 @@ def print_output(score):
     print("ner words precision:", words_precision)
     print("ner words recall:", words_recall)
 
+print("only ner")
+print_output(mean_score("data/farytales/characters/", "data/farytales/only_ner/", "data/farytales/coreference/"))
 
+print("only list")
+print_output(mean_score("data/farytales/characters/", "data/farytales/only_list/", "data/farytales/coreference/"))
+
+print("joined")
+print_output(mean_score("data/farytales/characters/", "data/farytales/ner_output/", "data/farytales/coreference/"))
+
+print("filtered")
 print_output(mean_score("data/farytales/characters/", "data/farytales/ner_output2/", "data/farytales/coreference/"))
+
+print("new list")
+print_output(mean_score("data/farytales/characters/", "data/farytales/ner_new_characters_no_filter/", "data/farytales/coreference/"))
+
+print("new list and filter")
+print_output(mean_score("data/farytales/characters/", "data/farytales/ner_new_characters/", "data/farytales/coreference/"))
