@@ -18,8 +18,9 @@ let primeFont = 'Helvetica';
 let secondFont = 'Arial';
 let bubbleSize = 100;
 
-    function preload() {
-    let charactersTable = loadTable('data/farytales_characters.csv', 'csv', 'header', () => {
+function preload() {
+    console.log("PATH:", window.location);
+    let charactersTable = loadTable('static/data/farytales_characters.csv', 'csv', 'header', () => {
         for(let i = 0; i < charactersTable.getRowCount(); i++) {
             characters.push(charactersTable.getString(i,0));
             sentiment.push(charactersTable.getString(i,1));
@@ -35,7 +36,7 @@ let bubbleSize = 100;
         }
     });
 
-    let relationshipsTable = loadTable('data/farytales_relationships.csv', 'csv', () => {
+    let relationshipsTable = loadTable('static/data/farytales_relationships.csv', 'csv', () => {
         for(let i = 0; i < relationshipsTable.getRowCount(); i++) {
             let person1 = relationshipsTable.getString(i,0);
             let person2 = relationshipsTable.getString(i,1);
@@ -45,8 +46,8 @@ let bubbleSize = 100;
         }
     });
 
-    person = loadImage('img/person.png');
-    bubble = loadImage('img/bubble.png');
+    person = loadImage('static/img/person.png');
+    bubble = loadImage('static/img/bubble.png');
 }
 
 function setup() {
