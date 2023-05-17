@@ -27,6 +27,15 @@ To use the ner pipeline for stories we can follow the example in `calculate_ner.
 ### NER evaluation
 
 ### Coreference resolution
+From https://www.clarin.si/repository/xmlui/handle/11356/1773 download the model and use code (common.py, data.py, metrics.py, utils.py and contextual_model_bert.py) from the https://github.com/clarinsi/SloCOREF. Put all files into the directory from clarin and run coreference function from the coreference.py file. The input parameter of the voreference function:
+* text - the text the model predicts the coreference
+* filename - json file that contains dictionary of entities from the name recognition and its starting/ending positions
+* trust - the threshold for the mention score
+* window_size - the length of the substring of a text
+* offset - the offset of the start of the next substring
+* deviation - the deviation around the position of the entity
+
+The output of the function is the modified dictionary of the entities and its starting/ending positions.
 
 ### Visualization
 To initiate the visualization, access your terminal and navigate to the directory where the project is stored (*nlp-course-neznaniletecipredmet*). Execute the command `python -m http.server 8000` and proceed to open your preferred web browser and access `http:localhost:8000`.
@@ -36,10 +45,10 @@ To initiate the visualization, access your terminal and navigate to the director
 The following results were obtained for the story *Janko in Metka*.
 Mean and standard deviation were utilized to report on the precision and recall of the outputs obtained from both the named entity recognition (NER) and coreference models.
 ```
-ner precision: (0.8789, 0.0437)
-ner recall: (0.6427, 0.0874)
-crr precision: (0.8808, 0.0439)
-crr recall: (0.621, 0.0913)
+ner precision: (0.8084, 0.0457)
+ner recall: (0.9591, 0.0234)
+crr precision: (0.8039, 0.047)
+crr recall: (0.9067, 0.0299)
 ner words precision: (0.0, 0.0)
 ner words recall: (0.0, 0.0)
 ```
