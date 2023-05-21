@@ -1,1 +1,9 @@
-{"mlajši brat": 1, "starejši brat": -1, "gospod": 0, "popotnik": 1, "kralj": 1, "kraljičina": 1, "berač": 0, "nesrečni brat": 0, "Vile": 0, "hudobnež": -1}
+{
+    "mlajši brat": 1,
+    "starejši brat": -1,
+    "gospod": 0,
+    "kralj": 1,
+    "kraljičina": 1,
+    "vila": 0,
+    "oče": 0
+}

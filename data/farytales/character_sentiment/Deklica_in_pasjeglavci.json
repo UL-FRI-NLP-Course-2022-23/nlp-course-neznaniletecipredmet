@@ -1,1 +1,7 @@
-{"Tačas": 0, "pasjeglavci": -1, "lepa deklica": 1, "mačka": -1, "stari dedec": 0, "oče kovač": 1}
+{
+    "pasjeglavci": -1,
+    "deklica": 1,
+    "mačka": -1,
+    "dedec": 0,
+    "oče": 1
+}

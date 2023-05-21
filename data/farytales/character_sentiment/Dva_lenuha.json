@@ -1,1 +1,8 @@
-{"Anže": 0, "Anžetov prijatelj": 0, "star pastir": -1, "kmetič": 1, "kobilica": 0, "ubogi berač": -1, "sova": -1, "petelin": 1, "kura": -1, "gospodinja": -1, "lisica": -1}
+{
+    "anže": 0,
+    "pastir": -1,
+    "kmet": 1,
+    "kobilica": 0,
+    "berač": -1,
+    "lisica": -1
+}

@@ -1,1 +1,6 @@
-{"kmetica": 0, "otroci": 1, "lepi ptiček": 1, "bela kača": 1, "ded": 0, "žena": 0}
+{
+    "mati": 1,
+    "otroci": 1,
+    "kača": 1,
+    "ded": 0
+}

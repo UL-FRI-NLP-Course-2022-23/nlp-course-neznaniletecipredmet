@@ -1,1 +1,10 @@
-{"graščak": 0, "graščakinja": 1, "pisar": 0, "dekl": 0, "hlapec": 0, "kuharica": 0, "služabnik": 0, "prašič": -1, "miška": -1}
+{
+    "graščak": 1,
+    "graščakinja": 1,
+    "pisar": 1,
+    "dekla": 1,
+    "hlapec": 1,
+    "kuharica": 1,
+    "služabnik": 1,
+    "miška": -1
+}
