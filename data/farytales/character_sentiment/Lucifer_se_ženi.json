@@ -1,7 +1,7 @@
 {
     "oče": 0,
-    "mati": -1,
-    "hčere": -1,
-    "grof": 0,
-    "lucifer": -1
+    "mati": 0,
+    "hčere": 1,
+    "grof": 1,
+    "lucifer": 0
 }

@@ -1,12 +1,12 @@
 {
     "grof": 1,
+    "ženica": 1,
     "starejši brata": -1,
     "mlajši brat": 1,
-    "ženica": 0,
     "princesinje": 1,
-    "čevljar": 0,
-    "stražar": 0,
+    "čevljar": 1,
+    "stražar": 1,
     "sodniki": -1,
     "ptič": 1,
-    "vrani": -1
+    "vrani": 0
 }

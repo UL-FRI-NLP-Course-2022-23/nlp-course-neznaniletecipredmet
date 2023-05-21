@@ -3,12 +3,12 @@
     "otroci": 1,
     "metulj": 1,
     "zajec": 1,
-    "sraka": 0,
-    "čarovnica": -1,
-    "divji mož": -1,
+    "sraka": 1,
+    "čarovnica": 0,
+    "divji mož": 0,
     "kobila": 1,
-    "stric": 0,
+    "stric": 1,
     "cestar": 1,
     "kolar": 1,
-    "sova": -1
+    "sova": 0
 }

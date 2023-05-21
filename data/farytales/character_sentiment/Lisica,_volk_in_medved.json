@@ -3,6 +3,6 @@
     "volk": 0,
     "medved": 0,
     "pes": 0,
-    "konj": 0,
-    "lovec": -1
+    "konj": 1,
+    "lovec": 0
 }

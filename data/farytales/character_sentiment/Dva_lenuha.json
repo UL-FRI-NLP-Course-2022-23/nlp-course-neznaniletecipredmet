@@ -1,8 +1,9 @@
 {
     "anže": 0,
-    "pastir": -1,
+    "pastir": 0,
     "kmet": 1,
-    "kobilica": 0,
-    "berač": -1,
-    "lisica": -1
+    "kobilica": 1,
+    "berač": 0,
+    "ptiči": 1,
+    "lisica": 0
 }

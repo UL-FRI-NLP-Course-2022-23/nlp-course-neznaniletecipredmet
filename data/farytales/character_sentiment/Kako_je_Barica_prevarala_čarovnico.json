@@ -1,10 +1,10 @@
 {
     "barica": 1,
     "mamica": 0,
-    "mehkodlačka": 0,
+    "mehkodlačka": 1,
     "zajček": 1,
-    "lisica": 0,
+    "lisica": 1,
     "jelen": 1,
-    "čarovnica": -1,
+    "čarovnica": 0,
     "palček": 1
 }

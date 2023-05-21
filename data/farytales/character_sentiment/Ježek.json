@@ -1,8 +1,8 @@
 {
-    "mati": 0,
+    "mati": 1,
     "ježek": 1,
     "grof": 0,
-    "najstarejša hčerka": -1,
-    "druga hčerka": -1,
-    "najmlajša hčerka": 1
+    "najstarejša hčerka": 0,
+    "najmlajša hčerka": 1,
+    "druga hčerka": 0
 }

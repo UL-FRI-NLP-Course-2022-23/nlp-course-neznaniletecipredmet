@@ -1,9 +1,9 @@
 {
     "kurent": 1,
-    "berači": -1,
-    "gospod": -1,
-    "smrt": -1,
-    "hudič": -1,
-    "peter": 0,
+    "berači": 0,
+    "gospod": 1,
+    "smrt": 0,
+    "hudič": 0,
+    "peter": 1,
     "bog": 1
 }
