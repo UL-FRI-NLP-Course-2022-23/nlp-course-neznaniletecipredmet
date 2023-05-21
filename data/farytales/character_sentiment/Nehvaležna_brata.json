@@ -1,1 +1,12 @@
-{"grof": 1, "starejši brata": -1, "mlajši brat": 1, "stara ženica": 0, "tri princesinje": 1, "čevljar": 0, "stražar": 0, "sodniki": -1, "zlati ptič": 1, "vrani": -1, "zmije": 0}
+{
+    "grof": 1,
+    "starejši brata": -1,
+    "mlajši brat": 1,
+    "ženica": 0,
+    "princesinje": 1,
+    "čevljar": 0,
+    "stražar": 0,
+    "sodniki": -1,
+    "ptič": 1,
+    "vrani": -1
+}

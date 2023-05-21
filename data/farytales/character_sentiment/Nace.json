@@ -1,1 +1,14 @@
-{"Nace": 1, "Reza": 0, "mestni otroci": 1, "ptički": 1, "metulji": 1, "divji zajec": 1, "sraka": 0, "carovnice": -1, "divji mož": -1, "bela kobila": 1, "svetnik": 1, "Nacetov kotiček": 1, "hlevska vrata": 0, "stric": 0, "cestar": 1, "kočija": 0, "krški polje": 0, "kolar": 1, "ptica": 0, "sova": -1, "mladički": -1}
+{
+    "nace": 1,
+    "otroci": 1,
+    "metulj": 1,
+    "zajec": 1,
+    "sraka": 0,
+    "čarovnica": -1,
+    "divji mož": -1,
+    "kobila": 1,
+    "stric": 0,
+    "cestar": 1,
+    "kolar": 1,
+    "sova": -1
+}
