@@ -148,6 +148,7 @@ def make_dataset_sentences(stories_dir: str, positions_dir: str, sentiment_dir: 
 
     with open(result_path, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
+        writer.writerow(["review", "sentiment"])
         writer.writerows(dataset)
 
 
