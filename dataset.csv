@@ -1,51 +1,51 @@
 review,sentiment
 "bela kača z $ je kača najedla, $ je kača izginila, $ belo kačo prijazno",1
 "majhne otroke. Hodila $ delat, otroke pa $ pridni. Otroci pa $ da otroci pripovedujejo",1
-prejo. Ded je,0
+prejo. Ded je,1
 "je mati hvalila, $ jest. Mati si $ naročje. Mati je $ je mati skočila",1
-"premagati zmaja, bo $ gospoduje zmaj, bo $ zaslišal zmajev glas. $ nad zmaja. Vzamejo $ ujeti zmaj ubogo",-1
+"premagati zmaja, bo $ gospoduje zmaj, bo $ zaslišal zmajev glas. $ nad zmaja. Vzamejo $ ujeti zmaj ubogo",0
 gnal pastir svojo $ brezskrbnih pastirjev se,1
 vprašanje. Poglavar je $ lov. Poglavar je,1
-"eno mačko; samo lino $ skoči mačka na lino $ mačja žival ne pusti,",-1
-"k očetu domov. Večkrat $ K očetu bi šla rada, $ je imel kovačnico,",1
-še pasjeglavci po $ s pasjeglavci zmenjeni. Daj mački $ pasjeglavci pridejo domov in,-1
-"lepa deklica sama $ dir. Deklica je vedela, $ bilo deklico strah. Nekoč",1
-"nagovori dedec. K $ reče dedec. Vem,",0
+"eno mačko; samo $ skoči mačka na $ ima mačka v $ Daj mački kos $ je mački mesa, $ kosorepo mačko počasi $ videč mačko po $ krvavo mačko. Brž",0
+k očetu domov. $ K očetu bi $ do očetovega doma. $ pa očeta ni $ bil oče ravno $ jutro oče kovač,1
+"še pasjeglavci po $ včasih pasjeglavce, ki $ s pasjeglavci zmenjeni. $ storila; pasjeglavci pridejo $ zasledili pasjeglavci in $ govoriti pasjeglavce. Po $ izvohajo pasjeglavci to $ dvanajst pasjeglavcev, ki",0
+lepa deklica sama $ skrita deklica. Bodli $ je deklica prišla $ bilo deklico strah. $ pravi deklica. Kako $ da deklica ni $ ubežno deklico. Medtem,1
+"nagovori dedec. K $ reče dedec. Vem,",1
 "šele volk: »Hej, $ menil volk. Sla $ zajca, volk pa $ prijel volka, se $ tudi volkov ni $ ne?« Volk pa",0
-"in medved ter $ začudenemu medvedu pod $ vzdihnil medved. Zajec $ spal, medved pa $ je medved ojunačil $ je medved izpustil $ stisnil medved, ko $ ovsu. Medved je $ oves!« Medved je $ spočijva.« Medved je $ zajčka. Medved se $ njem. Medved je",-1
+"in medved ter $ začudenemu medvedu pod $ vzdihnil medved. Zajec $ spal, medved pa $ je medved ojunačil $ je medved izpustil $ stisnil medved, ko $ ovsu. Medved je $ oves!« Medved je $ spočijva.« Medved je $ zajčka. Medved se $ njem. Medved je",0
 "tudi zajec in $ moj!« Zajec je $ sapo, zajec pa $ smrčal, zajec tudi. $ je zajca in $ premagal zajec« »Dveh $ videl zajca, volk $ z zajcem govoril $ pokazati zajca. Zato $ pritekla. Zajec je $ medved. Zajec je $ tudi. Zajec je $ junaka zajčka. Medved",1
 "žalost kralja in $ pred kralja, ker $ kraljičino. Kralj ga",1
 "dan. Vile so $ gorske Vile. Rekle so: $ neka Vila: »Da,",0
-ljubljeni oče. Zapustil,0
+ljubljeni oče. Zapustil,1
 dela. Mlajši brat pravi,1
-no starejši prav $ zapuščnina starejšemu. Šla $ je starejši brat mlajšemu:,-1
+no starejši prav $ zapuščnina starejšemu. Šla $ je starejši brat mlajšemu:,0
 "nekakega gospoda, ki $ posveten gospod, bil $ le gospoda poprašava,",0
 o kraljičini tiste $ se kraljičina bori $ bolno kraljičino. Kralj,1
 "nekega kmeta, ki",1
-"kakšna lisica, ki bi",-1
-"star pastir, ki",-1
-"tudi kobilica vam $ bila kobilica podkovana,",0
+"kakšna lisica, ki bi",0
+"star pastir, ki",0
+"tudi kobilica vam $ bila kobilica podkovana,",1
 "rekel Anže tovarišu, $ je Anže vtaknil $ domačih: Anže s $ rekel Anže: »Počijva $ pašo. Anže mu $ reče Anže prijatelju, $ rekel Anže in $ rekel Anže: »Le $ rekel Anže. »Ubogajva $ vzkliknil Anže, »piška $ bil Anže na straži, $ je Anžeta minil strah, $ kosilo. Anže in njegov",0
-ubog berač z $ rekel berač. »Najbolje,-1
+ubog berač z $ rekel berač. »Najbolje,0
 "vzela ježa! se $ ježka. Jež pa $ no, ježek! Pravi $ sinu ježek, že $ v ježka. Jež $ tudi ježek-Janček odšel $ hruško, ježek-Janček pa $ ti, ježek? ga $ odgovori ježek-Janček, ker $ gozda. Ježek mu $ dan Janček-ježek že $ kriči Janček-ježek pred $ pride ježek. Zato $ revček ježek. Na $ z ježkom vred $ zdaj ježek na $ ženina Jančka-ježka na $ se ježek-Janček strese $ petelin. Ježek-Janček to",1
- Mati mesi $ Pravi mati nejevolna. $ Komaj mati reče,0
+ Mati mesi $ Pravi mati nejevolna. $ Komaj mati reče,1
 nekoč grof na $ hruško. Grof počiva $ vpraša grof. Zakaj,0
-oglasi najstarejša zaničljivo. - $ pravi najstarejša najmlajši,-1
-de druga in $ pristavi druga. Janček,-1
+oglasi najstarejša zaničljivo. - $ pravi najstarejša najmlajši,0
+de druga in $ pristavi druga. Janček,0
 pravi najmlajša. Grof,1
-Malemu Jožku se $ silil Joško. »Jih $ branil Joško. »Kdo $ lastavica. Joško je $ pa Jošku preveč $ Toda Joško je $ — Joško se,0
-rekla lastavica. »Ti $ odgovarjala lastavica. »Pojdi!« $ smejala lastavica. Joško $ smejala lastavica. Zdaj,-1
+Malemu Jožku se $ silil Joško. »Jih $ branil Joško. »Kdo $ lastavica. Joško je $ pa Jošku preveč $ Toda Joško je $ — Joško se,1
+rekla lastavica. »Ti $ odgovarjala lastavica. »Pojdi!« $ smejala lastavica. Joško $ smejala lastavica. Zdaj,0
 "da muce zelo $ se! Muce predejo $ drži. Muca ve,",1
 "in očetu. Tako $ objemala,  oče $ zaskrbljena oče in",1
 pokazala mami in $ je mami potisnila $ huje. Mama jo,1
 te Urša pogleda,1
 je Naska z $ je Naskin grobi $ Tašo. Naska je,1
 K Taši je $ bila Taša zelo $ njej. Taša je,1
-"pridrsala čarovnica, grda $ začula čarovnico, kako $ bilo. Čarovnica je $ zarenčala čarovnica, zajahala $ zlobna čarovnica vrže $ povili. Čarovnica je $ s čarovnico vred. $ spustili čarovnico v",-1
-pomore. Lisica pa se,0
+"pridrsala čarovnica, grda $ začula čarovnico, kako $ bilo. Čarovnica je $ zarenčala čarovnica, zajahala $ zlobna čarovnica vrže $ povili. Čarovnica je $ s čarovnico vred. $ spustili čarovnico v",0
+pomore. Lisica pa se,1
 "oboroženih palčkov, da $ bilke malček-palček in $ toliko palčkov kot $ ugibali palčki, a $ so palčki izvolili",1
 mlad zajček preko $ In zajček je,1
-"mačko Mehkodlačko v $ mačko Mehkodlačko. Ko $ mačko Mehkodlačko naprej. $ mačko Mehkodlačko, da $ svojo muco in $ je muco in $ vzame muco v",0
+"mačko Mehkodlačko v $ mačko Mehkodlačko. Ko $ mačko Mehkodlačko naprej. $ mačko Mehkodlačko, da $ svojo muco in $ je muco in $ vzame muco v",1
 " Barica je $ drago.« Barica vzame $ kobilic.« Barica vzame $ pot. Barica je $ pomore Barica in $ glavi. Barica se $ zapazila Barica kup $ obšla Barico strašna $ prestraši Barica ter $ petami. Barica pa $ mrgolela. Barica jih $ bi Barico ugrabila, $ a Barica je $ izvolili Barico, da",1
 "staro mamico, a",0
 živela babica. Bila $ je babica veselo $ vstopila babica. Hitro,1
@@ -58,14 +58,14 @@ grajski pisar. Ali,1
 "tudi hlapca ni $ prime hlapca, hlapec $ za hlapca, hlapec",1
 "graščakinja kuharico na $ pride kuharica na $ za kuharico, kuharica",1
 "gospa služabnika, naj $ domov. Služabnik pride $ služabnika, služabnik za",1
-prišla miška in,-1
+prišla miška in,0
 zašepetal: »Mama!« Ko $ je mama skuhala $ z mamo obiral,1
-živel starec. Sonja $ njim. Starec je $ pa starca ni,-1
+živel starec. Sonja $ njim. Starec je $ pa starca ni,0
 deklica Sonja. Imela $ je Sonja priprla $ izbe. Sonja je,1
 "kar Spominčica.« ln $ nate.« Spominčica je $ šopek spominčic, te",1
-izrisala bolna gospa in,-1
-le bled mladenič s,-1
-peči. Utrujen moški je,-1
+izrisala bolna gospa in,0
+le bled mladenič s,0
+peči. Utrujen moški je,0
 samo Čas. In $ je Čas izpljunil $ ukazal Čas. »To,0
 "ime Leto,« je $ dneve.« Leto se $ zehati. Leto se",1
 "in Sanja je $ trije, Sanja, Mihec $ vzkliknila Sanja, »danes $ začudila Sanja. »Najbrž,« $ rekla Sanja, »sami",1
@@ -74,99 +74,99 @@ samo Čas. In $ je Čas izpljunil $ ukazal Čas. »To,0
 "s Sanjo in $ imela Sanjo samo $ zaklicala Sanja. »Seveda, $ k Sanji in $ hudega. Ampak Sanji in $ zašepetala Sanji v $ nazaj Sanja. Z $ vprašala Sanja. »Bova! $ je Sanja vrnila,",1
 "dvojčka Mihec in $ punčkami. Mihec pa $ Nina, Mihec pa $ naročju. Mihec in $ mirovati. Mihec je $ držala Mihca, ta $ opazovala. Mihec je $ rekel Mihec in $ Nino, Mihca pa",1
 "in Nina. Čeprav $ bi Nina včasih $ prikimala Nina, Mihec $ in Nina sta $ prijel Nino za $ pa Nino, ki $ rekel Nini na $ pomežiknila Nina. Takrat $ prijel Nino za $ je Nina strinjala, $ vzela Nino, Mihca",1
-"gledal. Bratec se $ ven. Bratec, ki $ obiščejo. Bratcu je",-1
-"je očka prestrašil,",0
+"gledal. Bratec se $ ven. Bratec, ki $ obiščejo. Bratcu je",0
+"je očka prestrašil,",1
 včasih kralji in,1
-in kraljica sta bila $ kača. Kraljica se,0
+in kraljica sta bila $ kača. Kraljica se,1
 "postal kača, ker $ plazila kača. Kraljica $ – kača –",0
-kraljevič. Mati ga $ vstal. Mati je $ je mati dete,-1
+kraljevič. Mati ga $ vstal. Mati je $ je mati dete,0
 maši. Kraljevič pa $ prosil. Kraljevič –,1
 "junaška Vida, ki $ Zares, Vida je $ bila Vida stara",1
 "veli Kurent ter $ imel Kurent nobenega $ »Ti Kurent, ti $ se Kurent — $ — Kurent se $ nikjer. Kurent si $ si Kurent. Vzame $ upije Kurent. Gospod $ vzame Kurent goslice $ časa, Kurentu pa $ spregovori Kurent: »Gospodje $ a Kurentu dajo $ goslice. Kurent zagode, $ mu!« Kurent jo $ za Kurentom. Kurent $ Kurentom. Kurent je $ tudi Kurenta ter $ mu: «Kurent, čas $ jej Kurent: — $ a Kurent jo $ obljubi Kurentu, da $ zna Kurent. Kurent $ Kurent. Kurent ubode $ meh. Kurent pa $ izpusti. Kurent pa $ po Kurenta. Čez $ pripelje Kurenta. Oj, $ h Kurentu. Kurent $ Kurentu. Kurent pa $ več. Kurent pa $ odžgal Kurent še $ a Kurent se $ tudi Kurent. Nekega $ skozi. Kurent pa $ neumnosti. Kurent pa $ grešnega Kurenta, — $ a Kurent uteče $ je Kurent v",1
-"ugleda gospoda, ki",-1
+"ugleda gospoda, ki",1
 "Gospod Bog. Ker $ k Bogu!« — $ jih Bogu za $ zatoži Bogu, ki",1
-Se-ve hudiču je,-1
-"sv. Peter mu $ Sv. Peter vzame, $ Sv. Peter ga $ »Ej, Peter, grlo,",0
-"ga berač, ki $ potrebnemu beraču!« Se $ nadlegujejo berači drug $ jeden berač — $ reče berač: »Ti $ a berača ne $ tistemu beraču, poskoči",-1
-domisli Smrt tudi $ dar!« Smrt hoče $ nihče. Smrt ga $ njo. Smrtnik (-njen $ Ko Smrtnik obljubi,-1
+Se-ve hudiču je,0
+"sv. Peter mu $ Sv. Peter vzame, $ Sv. Peter ga $ »Ej, Peter, grlo,",1
+"ga berač, ki $ potrebnemu beraču!« Se $ nadlegujejo berači drug $ jeden berač — $ reče berač: »Ti $ a berača ne $ tistemu beraču, poskoči",0
+domisli Smrt tudi $ dar!« Smrt hoče $ nihče. Smrt ga $ njo. Smrtnik (-njen $ Ko Smrtnik obljubi,0
 "kračo. Volk in $ god. Volk gre, $ slanine. Volku in $ dalje. Volk in $ desno. Volk pride $ pest. Volk in $ sir.« Volk jo",0
 god. Medvedov god $ zakaj. Medvedu in $ prežene. Medved in $ prežene. Medved in $ brlogu. Medved in $ naredila. Medved in $ tat? Medved in $ lisica. Medved je,0
-"do konj, ki",0
+"do konj, ki",1
 " Lisica se $ sama. Lisica pa $ lov. Lisica pa $ lov. Lisica pa $ brlog. Lisica pa $ nadlegovala. Lisica si $ narazen. Lisica pa $ razpoči. Lisica pa, $ ganiti. Lisica pa",1
 "dejala lisica. - $ odgovorila lisica, če $ je lisica gledala $ vprašala lisica, obljubil $ dejala lisica. Polenta $ dejala lisica, saj $ in lisica, ki $ dejala lisica, ta $ zaletel lisici med",1
-"sem, jež sem, $ rekel jež. Lisica, $ in jež se $ dejal jež, pa $ je jež nehal $ dejal jež, jaz $ dejal jež, tu $ In jež je",-1
+"sem, jež sem, $ rekel jež. Lisica, $ in jež se $ dejal jež, pa $ je jež nehal $ dejal jež, jaz $ dejal jež, tu $ In jež je",0
 "živela lisica, ki $ mati lisica jih $ mati lisica dejala: $ rekla lisica, od",1
-imela mlade. Vsak $ nje­ne mlade lepo $ bile mlade že,0
+imela mlade. Vsak $ nje­ne mlade lepo $ bile mlade že,1
 "sta oče in $ mater; oče pa $ k očetu te $ Vsa zmočena zapre $ k očetu, kateremu $ do očeta Reče $ Že hoče vzeti $ jo hoče malo $ bilo očetove --",0
-"in mati, ki",-1
-"tri hčere. Nesreča $ staršo hčer. Z $ drugo hčer, dobro $ najmlajšo hčer; se $ najmlajšo hčer, ki $ ukletih hčera. Potil $ uklete hčere, a",-1
-"— lucifer. »Kje $ napravi lucifer k $ pride lucifer domu, $ in lucifer si $ pride lucifer domu, $ si lucifer ter $ zapazi lucifer veliko",-1
-kak grof pride,0
+"in mati, ki",0
+"tri hčere. Nesreča $ staršo hčer. Z $ drugo hčer, dobro $ najmlajšo hčer; se $ najmlajšo hčer, ki $ ukletih hčera. Potil $ uklete hčere, a",1
+"— lucifer. »Kje $ napravi lucifer k $ pride lucifer domu, $ in lucifer si $ pride lucifer domu, $ si lucifer ter $ zapazi lucifer veliko",0
+kak grof pride,1
 "sam kralj tiste $ sporoči kralj našemu $ na kraljev dvor $ vreden kralj in $ kaj kralj misli? $ h kralju v $ odgovoriti kralju na $ pozna kralj po $ do kralja, da $ do kralja. Kralj $ je kralj čude $ vreden kralj?« Kuhar $ reči kralj na $ neki kralj misli",0
 "izučenega kuharja iz $ izučenega kuharja, ki $ tudi kuhar. Nekega $ de kuhar z $ preobleče kuhar za $ njegov kuhar.« Kralj $ tvoj kuhar!« In $ poravnala kuhar in",1
 "nekedaj mlinar, ki $ Oče mlinar pa $ Reven mlinarček je $ a mlinarček je $ našemu mlinarčku pa $ vsa mlinarska opravila, $ 'gospodu' mlinarju kuhal $ 'gospod' mlinar oblizaval $ 'gospod' mlinar prežil $ našemu mlinarju po $ pa mlinar ne $ našega mlinarja. Kaj $ rešiti mlinarja preteče $ dan, mlinarjev trebuh $ mu mlinar pove $ odgovori mlinar. Na $ in mlinar, tega $ celo mlinar igra",1
-"daleč medveda. Od $ dejal medved in $ Ubogega medveda je $ vpiti medved, če $ premagal medveda. ",-1
+"daleč medveda. Od $ dejal medved in $ Ubogega medveda je $ vpiti medved, če $ premagal medveda. ",0
 "neki lovec hodil $ kreganjem! Lovec je $ je moža opazil, $ rekel mož. Prej $ dejal mož, bolj $ je mož premagal",1
 "služil Nace pri $ otrokom Nace, vzor $ hlapec Nace. Res, $ ubogi Nace moral $ okrog Naceta, slepo $ ko Nace ni $ borni Nacetov kotiček $ Pisati Nace ni $ spraševali: »Nace, kako $ nad Nacetom, smo $ z Nacetom v $ jarek. Nace je $ nezavestnega Naceta zvlekli $ opravičiti Naceta: »Nace $ Naceta: »Nace je $ obvezanim Nacetom. Tudi $ je Nace napravil, $ poiskala Naceta, da $ iztaknil Nace in $ je Nace zazidal $ bodi, Nace! Kaj $ je Nace s $ razbijal Nace. Ko",1
 mi otroci naučili $ mi otroci bridko $ se otroci sami,1
 "vsakega metulja, katere",1
 divjega zajčka s,1
-"udomačil srako, ki",0
-v čarovnice in,-1
-in divjega moža; tudi,-1
+"udomačil srako, ki",1
+v čarovnice in,0
+in divjega moža; tudi,0
 "belo kobilo, ki",1
-"pri stricu za $ je stric kdaj $ klicat strica, ki $ pri stricu opravičiti $ »Po strica grem",0
+"pri stricu za $ je stric kdaj $ klicat strica, ki $ pri stricu opravičiti $ »Po strica grem",1
 "Nek cestar, ki",1
 šentjernejski kolar. Kar,1
-"bila sova. »Le $ je sova roparica, $ gnezdila sova. To $ Uboga sova se $ stara sova se",-1
+"bila sova. »Le $ je sova roparica, $ gnezdila sova. To $ Uboga sova se $ stara sova se",0
 usmilila vila z,1
-" Gorjanci pripovedujejo,",0
-"uboga bajtarica, ki $ uboga bajtarica pa $ izginila, bajtarica pa",1
-"svojega otroka ter $ odložila otroka na $ je otroka pozabila $ svojega otroka, a $ izgubljenim otrokom. Toliko",0
+" Gorjanci pripovedujejo,",1
+"uboga bajtarica, ki $ uboga bajtarica pa $ izginila, bajtarica pa",0
+"svojega otroka ter $ odložila otroka na $ je otroka pozabila $ svojega otroka, a $ izgubljenim otrokom. Toliko",1
 "svetega ptiča, kateri $ ta ptič, tega $ svetega ptiča, imel $ «Tisti ptič je $ zlati ptič od $ godba. Ptič mu $ Zlati ptič ni $ sveti ptič prvič $ zlatega ptiča. Drugo $ voljo ptič vender $ Najnazadnje ptič je $ zlati ptič. Stražar $ zlati ptič ravno",1
-se starejša brata zopet.,-1
+se starejša brata zopet.,0
 venec najmlajšega brata še,1
-"stara ženica, katera",0
+"stara ženica, katera",1
 "tri princesinje, katere $ lepo princesinjo, starejša",1
-nekem čevljarji za $ vpraša čevljar če,0
-"zapel, stražar pa",0
-"grof sodnike, ter $ Vsak sodnik je",-1
-dva vrana in,-1
+nekem čevljarji za $ vpraša čevljar če,1
+"zapel, stražar pa",1
+"grof sodnike, ter $ Vsak sodnik je",0
+dva vrana in,0
 poje.» Grof na,1
-"živel car, ki $ dejal carju: »Veličanstvo! $ položil carjevo hčer $ poklical car zdravnika $ je car to $ dejal carju: »Veličanstvo, $ pred carjevimi očmi. $ pred carja in $ odšla car in $ pred carjem, nalil $ dejal carju, naj",0
-"imel zdravnika; ta $ k zdravniku. Ko $ kot zdravnik in $ ukazal zdravniku, naj $ dal zdravniku dovoljenje; $ dela zdravnik. Ta $ car zdravnika in $ toda zdravnik noče $ za zdravnika. Zaukazal $ prinesel zdravnik najmočnejšega $ vprašal zdravnika: »Koliko $ in zdravnik. Na $ pokliče zdravnika. Ko $ je zdravnik zgrabil,",-1
+"živel car, ki $ dejal carju: »Veličanstvo! $ položil carjevo hčer $ poklical car zdravnika $ je car to $ dejal carju: »Veličanstvo, $ pred carjevimi očmi. $ pred carja in $ odšla car in $ pred carjem, nalil $ dejal carju, naj",1
+"imel zdravnika; ta $ k zdravniku. Ko $ kot zdravnik in $ ukazal zdravniku, naj $ dal zdravniku dovoljenje; $ dela zdravnik. Ta $ car zdravnika in $ toda zdravnik noče $ za zdravnika. Zaukazal $ prinesel zdravnik najmočnejšega $ vprašal zdravnika: »Koliko $ in zdravnik. Na $ pokliče zdravnika. Ko $ je zdravnik zgrabil,",0
 "zvit deček, ki $ je deček mutast, $ bi deček umrl,",1
 "imel hčer, ki $ svojo hčer, ki $ njegovo hčerko v $ carjevo hčer na $ ozdravel hčer?« Zdravnik",1
-dvanajst volkov. Dečkec $ prvega volka za $ toda volka ni,-1
+dvanajst volkov. Dečkec $ prvega volka za $ toda volka ni,0
  Oče si $ šel oče na,1
 "njivo, deček pa $ razveseli dečkec in $ seboj dečka v",1
 "bogat kralj, ki $ tamkajšnji kralj dvanajst $ »Gospod kralj, zvedeli $ tega kralja.« Kralj $ tem kralju, ki $ je kraljeva palača. $ imel kralj dvanajst $ h kralju. Ta",1
 bil najmlajši brat bolan: $ doma najmlajši brat. Pogleda,1
-"star mož in $ povedal mož. Skoraj $ star mož k $ stari mož: »Če $ stari mož in $ stari mož in $ starega moža kamenje $ starem možu; vsak $ starega moža, ki $ z možem na $ povedal mož, da",0
+"star mož in $ povedal mož. Skoraj $ star mož k $ stari mož: »Če $ stari mož in $ stari mož in $ starega moža kamenje $ starem možu; vsak $ starega moža, ki $ z možem na $ povedal mož, da",1
 reče starejši brat: »Zdaj,0
-zaroče. Najmlajša kraljična pa,-1
-"sreča lisico. Ta $ ti, lisica.« Gre $ spomni lisice, ki $ pride lisica k",0
-"sreča volka, ki $ ti, volk.« Mladenič $ tisti volk, ki",0
-nas čarovnik ne $ njimi čarovnik. Toda,-1
+zaroče. Najmlajša kraljična pa,0
+"sreča lisico. Ta $ ti, lisica.« Gre $ spomni lisice, ki $ pride lisica k",1
+"sreča volka, ki $ ti, volk.« Mladenič $ tisti volk, ki",1
+nas čarovnik ne $ njimi čarovnik. Toda,0
 "vina, mačko, kozo, $ dala mačko in $ oddati mačke. Dobro! $ spusti mačko na $ tla, mačka hitro $ in mačko zaprejo $ bo mačka zgorela. $ »Če mačka pride $ vname, mački je $ svoji mačji navadi $ gre mačka nad $ je mačka pribežala $ še mačko nazaj. $ da mačko, nato $ požene mačko z $ dobil mačko nazaj",1
-"Neki oče je $ je oče umrl,",0
-"jedli, krčmar pa $ ukaže krčmar, naj $ naš krčmar Vrban. $ je krčmar to",-1
+"Neki oče je $ je oče umrl,",1
+"jedli, krčmar pa $ ukaže krčmar, naj $ naš krčmar Vrban. $ je krčmar to",0
 "pravi grofica. Najmlajši $ se grofica spomni, $ rekel grofici: »Ta $ misli grofica, »pa",0
-delajo hlapci. Grofica $ da hlapcem ne $ pošlje hlapca za,0
-izvalil zmajček. Mladiček $ bežečega zmaja s,0
-strani. Ptiči zbrani,0
+delajo hlapci. Grofica $ da hlapcem ne $ pošlje hlapca za,1
+izvalil zmajček. Mladiček $ bežečega zmaja s,1
+strani. Ptiči zbrani,1
 "živel Jaka, ki $ odgovarjal Jaka. A $ je Jaka svojega $ se Jaka in $ pomisli Jaka. »Njo $ je Jaka utegnil",1
-"slabotnega petelina. Kadar $ svojega petelina dobro $ in petelin grela $ hrani petelina, da",0
-"zagotovo coprnica,« pomisli $ in coprnica mu",-1
-velikanska pošast s,-1
-"ga sosedje videli,",0
-"imenom Mock-a-fellow. Imel $ pa Mock-a-fellow jako $ nikoli. Mock-a-fellow je $ bil Mock-a-fellow z $ poskus. Mock-a-fellow je $ milionarja Mock-a-fellowa pripravi $ pred Mock-a-fellowom, a $ vspeha. Mock-a-fellow je $ v Mock-a-fellowi palači $ očitati Mock-a-fellowu neznosne $ potom. Mock-a-fellow je $ – Mock-a-fellow se $ Ha!« Mock-a-fellow je $ In Mock-a-fellow se",-1
-"glavni poslovodja, s $ trudil poslovodja, da $ Toda poslovodja je $ ozmerjal poslovodjo. Slednjič $ potrpežljivemu poslovodji prišlo $ in poslovodja ter",0
+"slabotnega petelina. Kadar $ svojega petelina dobro $ in petelin grela $ hrani petelina, da",1
+"zagotovo coprnica,« pomisli $ in coprnica mu",0
+velikanska pošast s,0
+"ga sosedje videli,",1
+"imenom Mock-a-fellow. Imel $ pa Mock-a-fellow jako $ nikoli. Mock-a-fellow je $ bil Mock-a-fellow z $ poskus. Mock-a-fellow je $ milionarja Mock-a-fellowa pripravi $ pred Mock-a-fellowom, a $ vspeha. Mock-a-fellow je $ v Mock-a-fellowi palači $ očitati Mock-a-fellowu neznosne $ potom. Mock-a-fellow je $ – Mock-a-fellow se $ Ha!« Mock-a-fellow je $ In Mock-a-fellow se",0
+"glavni poslovodja, s $ trudil poslovodja, da $ Toda poslovodja je $ ozmerjal poslovodjo. Slednjič $ potrpežljivemu poslovodji prišlo $ in poslovodja ter",1
 "oblečen delavec. Prosi, $ stal delavec pred $ je delavec rekel,",1
-"prisluhnila Sanja in $ rekla Sanja. »Pojdimo,« $ rekla, Sanja, »samo $ poklicala Sanja. »Kaj $ ujezila Sanja. » $ rekla Sanja. Prijela",0
-"dvojčka, Nina in $ še Nina. »Saj $ posušilo. Nina se $ še Nina in $ zacepetala Nina. »V $ vzkliknila Nina. »Nikakor $ še Nino in $ luže, Nina in",-1
-"in Mihec. »Pojdimo $ predlagal Mihec. »Ne $ že Mihec zapodil $ vedita!« Mihec se $ zacepetal Mihec. »Jaz $ nadaljeval Mihec. »Krasno, $ najprej Mihca, potem $ in Mihec pa",-1
+"prisluhnila Sanja in $ rekla Sanja. »Pojdimo,« $ rekla, Sanja, »samo $ poklicala Sanja. »Kaj $ ujezila Sanja. » $ rekla Sanja. Prijela",1
+"dvojčka, Nina in $ še Nina. »Saj $ posušilo. Nina se $ še Nina in $ zacepetala Nina. »V $ vzkliknila Nina. »Nikakor $ še Nino in $ luže, Nina in",0
+"in Mihec. »Pojdimo $ predlagal Mihec. »Ne $ že Mihec zapodil $ vedita!« Mihec se $ zacepetal Mihec. »Jaz $ nadaljeval Mihec. »Krasno, $ najprej Mihca, potem $ in Mihec pa",0
 "prikazala vila z $ velela vila, kos $ ni vila spet $ je vila izginila,",1
 "ubog drvar, ki $ izginila, drvar pa $ mladi drvar s",1
-z ostarelo ženo vred. $ studencu. Žena pa $ drvarjevo prvo ženo... Ko,-1
-njegova druag žena je,0
+z ostarelo ženo vred. $ studencu. Žena pa $ drvarjevo prvo ženo... Ko,0
+njegova druag žena je,1
