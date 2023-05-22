@@ -1,68 +1,39 @@
 import argparse
-import json
 import sys
-from typing import Dict, Optional
-
 import numpy as np
-import torch
-import torch.nn as nn
 import torch.optim as optim
-from sklearn.model_selection import KFold
-from transformers import BertModel, BertTokenizer
-
-
-import logging
-import os
 import time
-
-from tqdm import tqdm
-
-# import metrics
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-# from utils import get_clusters
-# from visualization import build_and_display
-
 import json
-from collections import Counter
-import logging
 import os
+import logging
+import csv
+import pandas as pd
+from collections import OrderedDict
+from bs4 import BeautifulSoup
+import neleval.coref_metrics as metrics
+from collections import Counter
 from typing import List, Optional, Mapping
-
 from sklearn.model_selection import train_test_split
+from tqdm import tqdm
+from sklearn.model_selection import KFold
+from transformers import BertModel, BertTokenizer
+from typing import Dict, Optional
 
 
 PAD_TOKEN, PAD_ID = "<PAD>", 0
 BOS_TOKEN, BOS_ID = "<BOS>", 1
 EOS_TOKEN, EOS_ID = "<EOS>", 2
 UNK_TOKEN, UNK_ID = "<UNK>", 3
-
-# from common import ControllerBase, NeuralCoreferencePairScorer
-# from data import read_corpus, Document
-# from utils import split_into_sets, fixed_split, KFoldStateCache
-
-import os
-import logging
-import csv
-import pandas as pd
-from collections import OrderedDict
-
-from bs4 import BeautifulSoup
-
-import neleval.coref_metrics as metrics
-
 DUMMY_ANTECEDENT = None
-#
-# #####################
-# # GLOBAL PARAMETERS
-# #####################
-# # Path "./data/*" assumes you are running from root folder, i.e. (python /src/baseline.py)
-# # Use path "../data/*" if you are running from src folder, i.e. (cd src) and then (python baseline.py)
+
 COREF149_DIR = os.environ.get("COREF149_DIR", "slo_coref/data/coref149")
 SENTICOREF_DIR = os.environ.get("SENTICOREF149_DIR", "./data/senticoref1_0")
 SENTICOREF_METADATA_DIR = "./data/senticoref_pos_stanza"
 SSJ_PATH = os.environ.get("SSJ_PATH", "slo_coref/data/ssj500k-sl.TEI/ssj500k-sl.body.reduced.xml")
+
 
 class Score:
 
@@ -470,9 +441,6 @@ class ControllerBase:
             "ceafe": ceaf_score,
             "avg": avg_score
         }
-
-    # def visualize(self):
-    #     build_and_display(self.path_pred_clusters, self.path_pred_scores, self.path_model_dir, display=False)
 
 
 class NeuralCoreferencePairScorer(nn.Module):

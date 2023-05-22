@@ -1,7 +1,8 @@
 import os
 import classla
-from contextual_model_bert.contextual_model_bert import ContextualControllerBERT
-from contextual_model_bert.data import Document, Token, Mention
+
+from helpers_coref import ContextualControllerBERT
+from helpers_coref import Document, Token, Mention
 from data_processing import remove_new_lines
 import json
 
@@ -15,7 +16,7 @@ def classla_output_to_coref_input(classla_output):
 
     str_document = classla_output.text
     start_char = 0
-    MENTION_MSD = {"N", "V", "R", "P"}  # noun, verb, adverb, pronoun
+    MENTION_MSD = {"N", "P"}  # "N"-noun, "V"-verb, "R"-adverb, "P"-pronoun
 
     current_mention_id = 1
     token_index_in_document = 0
@@ -146,8 +147,8 @@ def coref_mentions(input, threshold, return_singletons=False):
     }
 
 
-def coreference(text, filename, trust=0.5, window_size=1000, offset=500, deviation=2):
-    with open("../data/farytales/ner_output2/" + filename+'.json') as json_file:
+def coreference(text, filename, trust=0.5, window_size=1100, offset=550, deviation=2):
+    with open("../data/farytales/ner_output2/" + filename+'.json', encoding="utf-8") as json_file:
         extraction = json.load(json_file)
 
     start_offset = 0
@@ -197,13 +198,14 @@ def coreference(text, filename, trust=0.5, window_size=1000, offset=500, deviati
 def run_all():
     directory = "../data/farytales/stories"
     for filename in os.listdir(directory):
-        print(filename)
         f = os.path.join(directory, filename)
         with open(f, encoding="utf8") as file:
             text = file.read()
         name = os.path.splitext(filename)[0]
+
         result = coreference(remove_new_lines(text), name, trust=0.6)
         with open("../data/farytales/coreference/"+name+".json", "w", encoding="utf-8") as outfile:
             json.dump(result, outfile, ensure_ascii=False)
 
 
+run_all()
