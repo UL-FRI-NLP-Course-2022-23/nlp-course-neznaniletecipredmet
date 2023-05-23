@@ -1,1 +1,14 @@
-{"revna mati": 0,  "sin edinec": 1,  "tri lepe deklice": 1,  "pastirček": 0,  "čarovnikova hči": 1,  "starec": 0,  "ptički": 0}
+{
+    "mati": 1,
+    "sin": 1,
+    "deklice": 1,
+    "hči": 1,
+    "starec": 1,
+    "živali": 1,
+    "ptički": 1,
+    "brat": 1,
+    "krivec": 1,
+    "kovač": 1,
+    "čarovnik": 0,
+    "čarovnica": 0
+}

@@ -17,7 +17,7 @@ def remove_new_lines(txt: str) -> str:
     return txt
 
 def make_dataset_surrounding_words(num_words_before: int, num_words_after: str, stories_dir: str,
-                                   positions_dir: str, sentiment_dir: str, result_path: str
+                                   positions_dir: str, sentiment_dir: str, result_path: str,
                                    separate: bool) -> None:
     dataset = []
 
@@ -89,7 +89,7 @@ def make_dataset_surrounding_words(num_words_before: int, num_words_after: str, 
         writer.writerows(dataset)
 
 def make_dataset_only_surrounding(num_words_before: int, num_words_after: str, stories_dir: str,
-                                   positions_dir: str, sentiment_dir: str, result_path: str
+                                   positions_dir: str, sentiment_dir: str, result_path: str,
                                    separate: bool) -> None:
     dataset = []
 
