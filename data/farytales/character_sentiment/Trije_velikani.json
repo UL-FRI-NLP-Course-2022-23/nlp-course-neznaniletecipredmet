@@ -1,1 +1,9 @@
-{"Oče": 1, "Sine": 1, "Kovački mojster": 0, "Kneza": 0, "Velikan": 1, "Mladenič": 1, "Kralj": 0, "Vojaki": 0, "Zveri": 0}
+{
+    "oče": 1,
+    "kovač": 0,
+    "knez": 0,
+    "velikan": 1,
+    "mladenič": 1,
+    "kralj": 0,
+    "zver": 0
+}

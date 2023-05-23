@@ -1,1 +1,7 @@
-{"Zmaj": 1, "Vratar": 0, "Sodnik": 0, "Porotniki": 0, "Gasilci": 0}
+{
+    "Zmaj": 1,
+    "Vratar": 0,
+    "Sodnik": 0,
+    "Porota": 0,
+    "Gasilci": 0
+}

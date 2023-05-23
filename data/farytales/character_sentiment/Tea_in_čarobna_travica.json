@@ -1,1 +1,6 @@
-{"Tea": 1, "Aci": 1, "Mama slonica": 1, "Ata slon": 1, "Slonček": 1, "Slončica": 0}
+{
+    "tea": 1,
+    "mama": 1,
+    "ata": 1,
+    "slonček": 1
+}

@@ -1,1 +1,11 @@
-{"Nekdo": 1, "zajec": 0, "kokoš": 1, "piščeta": 1, "mlada kozica": 1, "koza": 1, "kozliči": 1, "telica": 1, "krava": 1, "tele": 1, "žrebe": 1, "lep konj": 1, "človek": 0}
+{
+    "zajec": 0,
+    "kokoš": 1,
+    "pišče": 1,
+    "kozica": 1,
+    "telica": 1,
+    "krava": 1,
+    "tele": 1,
+    "žrebe": 1,
+    "konj": 1
+}

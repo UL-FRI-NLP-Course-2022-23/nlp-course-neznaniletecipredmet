@@ -1,1 +1,9 @@
-{"mož": 1, "ženica": 1, "Sirotica": 1, "mačeha": 0, "kravica": 1, "mladi grof": 1, "mati grofija": 1}
+{
+    "oče": 1,
+    "mati": 1,
+    "sirotica": 1,
+    "mačeha": 0,
+    "kravica": 1,
+    "grof": 1,
+    "grofinja": 1
+}
