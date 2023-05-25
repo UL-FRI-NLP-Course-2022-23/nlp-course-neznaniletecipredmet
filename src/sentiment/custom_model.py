@@ -12,7 +12,7 @@ class CustomModel(tf.keras.Model):
                  dropout_rate=0.1,
                  training=False,
                  name="custom_imdb_model"):
-        super(CustomIMDBModel, self).__init__(name=name)
+        super(CustomModel, self).__init__(name=name)
         
         self.embedding = layers.Embedding(vocabulary_size,
                                           embedding_dimensions)
