@@ -11,7 +11,7 @@ from characters_features import characteristics, weights_of_links, character_imp
 def analyse_story(text):
     nlp = classla.Pipeline('sl')
     nlp_results = nlp(text)
-    all_entities = find_all_entities(text, "./src/resources/characters.txt", nlp)
+    all_entities = find_all_entities(text, "./src/resources/characters.txt", nlp_results)
     # occurrences = coreference(remove_new_lines(text), all_entities, trust=0.6)
 
     characteristics = characteristics(all_entities, list(nlp_results.iter_tokens()))
