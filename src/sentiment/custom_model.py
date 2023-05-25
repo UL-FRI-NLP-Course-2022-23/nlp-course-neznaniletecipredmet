@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras import layers
 
-class CustomIMDBModel(tf.keras.Model):
+class CustomModel(tf.keras.Model):
     
     def __init__(self,
                  vocabulary_size,
