@@ -102,10 +102,7 @@ def find_all_entities_old(text: str, character_file: str, nlp, threshold: float 
     return results
 
 
-def find_all_entities(text: str, character_file: str, nlp, threshold: float = 0.95) -> Dict:
-    # Compute classla results
-    nlp_results = nlp(text)
-
+def find_all_entities(text: str, character_file: str, nlp_results, threshold: float = 0.95) -> Dict:
     results = find_entities_from_list(character_file, nlp_results, threshold)
     results_ner = find_entities_of_ner(nlp_results, threshold)
 

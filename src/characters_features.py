@@ -75,10 +75,12 @@ def link_classification(coref_dict, doc_tokens):
     affin={}
     for l in links:
         summ = 0
+        length = 0
         for i in links[l]:
             if i in afinn:
+                length +=1
                 summ += float(afinn[i])
-        affin[l] = summ
+        affin[l] = summ/length
 
     return affin
 
