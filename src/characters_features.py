@@ -80,7 +80,7 @@ def link_classification(coref_dict, doc_tokens):
             if i in afinn:
                 length +=1
                 summ += float(afinn[i])
-        affin[l] = summ/length
+        affin[l] = 0 if length==0 else summ/length
 
     return affin
 
@@ -106,3 +106,5 @@ def features():
         print(character_importance(coreference, list(doc.iter_tokens())))
         print(link_classification(coreference, list(doc.iter_tokens())))
         print()
+
+features()
