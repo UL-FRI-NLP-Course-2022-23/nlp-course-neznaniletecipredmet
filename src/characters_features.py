@@ -66,8 +66,9 @@ def link_classification(entity_dict, doc_tokens):
                 if len(connected) > 2:
                     res = [(a, b) for idx, a in enumerate(connected) for b in connected[idx + 1:]]
                     for i in res:
+                        i = list(i)
                         i.sort()
-                        links[i].extend(verbs)
+                        links[tuple(i)].extend(verbs)
                 links[tuple(sorted(connected))].extend(verbs)
             connected, verbs = set(), []
 
