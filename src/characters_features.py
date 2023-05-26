@@ -115,5 +115,3 @@ def features():
         print(character_importance(coreference, list(doc.iter_tokens())))
         print(link_classification(coreference, list(doc.iter_tokens())))
         print()
-
-features()

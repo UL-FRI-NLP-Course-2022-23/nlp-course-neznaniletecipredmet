@@ -19,7 +19,8 @@ let secondFont = 'Arial';
 let bubbleSize = 100;
 
 function preload() {
-    let charactersTable = loadTable('./data/characters.csv', 'csv', () => {
+    title = 'Kako_so_pulili_repo'
+    let charactersTable = loadTable('./data/characters/' + title + '.csv', 'csv', () => {
         for(let i = 0; i < charactersTable.getRowCount(); i++) {
             characters.push(charactersTable.getString(i,0));
             sentiment.push(charactersTable.getString(i,1));
@@ -35,7 +36,7 @@ function preload() {
         }
     });
 
-    let relationshipsTable = loadTable('data/relationships.csv', 'csv', () => {
+    let relationshipsTable = loadTable('data/relationships/' + title + '.csv', 'csv', () => {
         for(let i = 0; i < relationshipsTable.getRowCount(); i++) {
             let person1 = relationshipsTable.getString(i,0);
             let person2 = relationshipsTable.getString(i,1);
@@ -63,6 +64,7 @@ function draw() {
         let type = relationships[i][2];
         let pow = relationships[i][3];
         let rel = type > 0 ? "zaveznik" : "sovražnik";
+        let type_normalised = (type + 5) * 25
         let lineCenterX = (characterCoordinates[char1][0] + characterCoordinates[char2][0]) / 2;
         let lineCenterY = (characterCoordinates[char1][1] + characterCoordinates[char2][1]) / 2;
         let lineLength = Math.sqrt(Math.pow((characterCoordinates[char1][0] - characterCoordinates[char2][0]), 2) +
@@ -73,7 +75,7 @@ function draw() {
         if (characterCoordinates[char1][0] > characterCoordinates[char2][0]) minX = char2;
         if (characterCoordinates[char1][1] > characterCoordinates[char2][1]) minY = char2;
 
-        stroke(100 + 100*pow);
+        stroke(type_normalised);
         strokeWeight(10*pow);
         line(characterCoordinates[char1][0], characterCoordinates[char1][1], characterCoordinates[char2][0], characterCoordinates[char2][1]);
 
@@ -93,6 +95,10 @@ function draw() {
         //rect(characterCoordinates[min][0], characterCoordinates[min][1], Math.abs(characterCoordinates[char1][0] - characterCoordinates[char2][0]), Math.abs(characterCoordinates[char1][1] - characterCoordinates[char2][1]));
         //rotate(-lineAngle);
     }
+    fill('black');
+    noStroke();
+    textSize(16);
+    textAlign(CENTER, CENTER);
     for (let i = 0; i < characters.length; i++) {
         imgX = characterCoordinates[characters[i]][0];
         imgY = characterCoordinates[characters[i]][1];
@@ -102,8 +108,8 @@ function draw() {
         image(person, imgX - imgSize/2, imgY - imgSize/2, imgSize, imgSize);
         text(characters[i].toUpperCase(), imgX - imgSize/2, imgY + imgSize/2, imgSize, 20);
 
-        if (mouseX > imgX - imgSize/2 && mouseX < imgX + imgSize/2 && mouseY > imgY - imgSize/2 && mouseY < imgY + imgSize/2) {
-        // if (true) {
+        // if (mouseX > imgX - imgSize/2 && mouseX < imgX + imgSize/2 && mouseY > imgY - imgSize/2 && mouseY < imgY + imgSize/2) {
+        if (characterTraits[characters[i]].length > 0) {
             tint(255, 100);
             image(bubble, imgX, imgY - imgSize/2 - bubbleSize, bubbleSize, bubbleSize);
             text(characterTraits[characters[i]].join("\n"), imgX, imgY - imgSize/2 - bubbleSize, bubbleSize, bubbleSize-10);
