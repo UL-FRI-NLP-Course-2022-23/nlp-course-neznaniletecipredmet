@@ -12,7 +12,7 @@ def index():
 
 
 @app.route("/process", methods=["POST"])
-def process():
+def procrelationship_weightsess():
     # Get the text input from the request
     text_input = request.json["text"]
 

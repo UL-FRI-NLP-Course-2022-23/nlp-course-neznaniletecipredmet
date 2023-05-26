@@ -66,7 +66,7 @@ def link_classification(coref_dict, doc_tokens):
             connected, verbs = set(), []
 
     afinn = {}
-    with open("../src/Slovene_sentiment_lexicon_JOB.txt", encoding="utf8") as file:
+    with open("./src/Slovene_sentiment_lexicon_JOB.txt", encoding="utf8") as file:
         lines = [line for line in file]
 
     for l in lines:

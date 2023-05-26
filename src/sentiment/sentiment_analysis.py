@@ -8,7 +8,7 @@ nltk.download('slovene')
 
 from nltk.tokenize import sent_tokenize
 
-from sentiment.custom_model import CustomModel
+from src.sentiment.custom_model import CustomModel
 
 
 class CustomSentimentAnalysis():
