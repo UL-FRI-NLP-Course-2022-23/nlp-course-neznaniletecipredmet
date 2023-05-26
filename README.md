@@ -64,8 +64,3 @@ ner words recall: (0.0, 0.0)
 ```
 
 ![visualisation_example](visualisation/example/visualisation_example.png)  
-
-
-# TODOs:
-* Implement the protagonist classification
-* Implement character feature extraction
