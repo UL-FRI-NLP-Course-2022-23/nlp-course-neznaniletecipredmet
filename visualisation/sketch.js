@@ -19,7 +19,7 @@ let secondFont = 'Arial';
 let bubbleSize = 100;
 
 function preload() {
-    title = 'Kako_so_pulili_repo'
+    title = 'Zlata_ptica'
     let charactersTable = loadTable('./data/characters/' + title + '.csv', 'csv', () => {
         for(let i = 0; i < charactersTable.getRowCount(); i++) {
             characters.push(charactersTable.getString(i,0));
@@ -29,7 +29,9 @@ function preload() {
             let traits = []
             let j = 3
             while (charactersTable.get(i,j)) {
-                traits.push(charactersTable.get(i,j));
+                if (!traits.includes(charactersTable.get(i,j))) {
+                    traits.push(charactersTable.get(i,j));
+                }
                 j++;
             }
             characterTraits[characters[i]] = traits;
@@ -42,7 +44,9 @@ function preload() {
             let person2 = relationshipsTable.getString(i,1);
             let relation = relationshipsTable.getString(i,2);
             let percent = relationshipsTable.getString(i,3);
-            relationships.push([person1, person2, relation, percent]);
+            if (percent > 0) {
+                relationships.push([person1, person2, relation, percent]);
+            }
         }
     });
 
@@ -63,8 +67,8 @@ function draw() {
         let char2 = relationships[i][1];
         let type = relationships[i][2];
         let pow = relationships[i][3];
-        let rel = type > 0 ? "zaveznik" : "sovražnik";
-        let type_normalised = (type + 5) * 25
+        let rel = 'nevtralno';
+        let type_normalised = Math.abs(type) / 5
         let lineCenterX = (characterCoordinates[char1][0] + characterCoordinates[char2][0]) / 2;
         let lineCenterY = (characterCoordinates[char1][1] + characterCoordinates[char2][1]) / 2;
         let lineLength = Math.sqrt(Math.pow((characterCoordinates[char1][0] - characterCoordinates[char2][0]), 2) +
@@ -75,8 +79,11 @@ function draw() {
         if (characterCoordinates[char1][0] > characterCoordinates[char2][0]) minX = char2;
         if (characterCoordinates[char1][1] > characterCoordinates[char2][1]) minY = char2;
 
-        stroke(type_normalised);
-        strokeWeight(10*pow);
+        stroke(200);
+        if (type > 1) {rel = "zaveznik";stroke(100, 255, 100, 100 - 100*Math.abs(type_normalised));}
+        if (type < -1) {rel = "sovražnik";stroke(255, 100, 100, 100 - 100*Math.abs(type_normalised));}
+
+        strokeWeight(3 + 7*pow);
         line(characterCoordinates[char1][0], characterCoordinates[char1][1], characterCoordinates[char2][0], characterCoordinates[char2][1]);
 
         fill('black');
@@ -115,6 +122,19 @@ function draw() {
             text(characterTraits[characters[i]].join("\n"), imgX, imgY - imgSize/2 - bubbleSize, bubbleSize, bubbleSize-10);
             tint(255, 255);
         }
+
+        let sentiment_min = Math.min(...sentiment);
+        let normalized_sentiment = (sentiment[i]-sentiment_min)/(Math.max(...sentiment)-sentiment_min);
+        let pos_x = imgX - imgSize/2;
+        if (normalized_sentiment > 0.75 || normalized_sentiment < 0.2) {pos_x = imgX + 7;}
+
+        fill('red');
+        if (sentiment[i] > 0.5) {fill('seagreen');}
+        textSize(11);
+        text(Math.round(sentiment[i]*100) + "%", pos_x, imgY - imgSize/2, imgSize/2, 20);
+
+        textSize(16);
+        fill('black');
     }
 }
 
@@ -154,7 +174,7 @@ function createVisualisation() {
     for (let i = 0; i < characters.length; i++) {
         let imgSize = protagonist[i]*50 + 20;
         let r = Math.min(graphWidth, graphHeight) * (1 - protagonist[i]);
-        let fi = Math.PI * (1 - (sentiment[i]-sentiment_min)/normalize);
+        let fi = Math.PI * ((sentiment[i]-sentiment_min)/normalize);
         let imgX = graphCenterX + r * Math.cos(fi);
         let imgY = graphCenterY + r * Math.sin(fi);
         characterCoordinates[characters[i]] = [imgX, imgY, imgSize];

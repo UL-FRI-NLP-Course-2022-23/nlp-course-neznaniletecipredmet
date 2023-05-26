@@ -1,4 +1,50 @@
-from src.analysis import analyse_story
+import csv
+import classla
+from src.name_entity_recognition import find_all_entities
+from src.sentiment.sentiment_analysis import CustomSentimentAnalysis
+from src.characters_features import characteristics, weights_of_links, character_importance, link_classification
+from src.data_processing import remove_new_lines
+import json
+import os
 
-text_input = "Bila je kmetica in je imela majhne otroke. Hodila je na polje delat, otroke pa je puščala doma ter jim v skledo dajala mleka, da medtem niso bili lačni. Vselej so vse pojedli, zato jih je mati hvalila, dn so pridni. Otroci pa so rekli: - Saj ne jemo sami, k nam hodi tudi lep ptiček jest. Mati si je mislila, da prihaja kakšna mačka in je z otroki. Vendar se ji je čudno zdelo, da otroci pripovedujejo o lepem belem ptičku. Hotela se je prepričati, kaj je. Skrila se je tedaj v hišo in postavila otrokom mleko v veži kakor ponavadi ter čakala, kaj bo. Kmalu se je privila izpod mize bela kača z lepo krono na glavi ter se zvila najmlajšemu v naročje. Mati je bila vsa trda od strahu. Otroci pa so božali in gladili lepega ptička. Ko se je kača najedla, je stresla lepo kronico z glave in se spet izgubila v luknjo. Brž, ko je kača izginila, je mati skočila v vežo in spravila otroke na varno; seveda ni pozabila pobrati tudi krone. Dala jo je v skrinjo, kjer so imeli prejo. Ded je pozimi prejo vil. Vso zimo je vil, pa je ni mogel poviti. Žena si je mislila: - Kaj neki more to biti? Morda ima krona tako moč? Zato so dali krono proč in kmalu je bila preja povita. Nato so dali krono v žito, pa ni nikdar pošlo v njihovi kašči. Tako so devali kronico tudi k drugim rečem in v kratkem času si je hiša tako opomogla, da je bila najpremožnejša v vasi. Imeli so kronico tako dolgo, dokler je bil pri hiši tisti rod, ki je z belo kačo prijazno in lepo ravnal."
-analyse_story(text_input)
+nlp = classla.Pipeline('sl')
+analyser = CustomSentimentAnalysis("./models/custom")
+
+def analyse_story(title, text):
+    text = remove_new_lines(text)
+
+    nlp_results = nlp(text)
+    all_entities = find_all_entities(text, "src/resources/characters.txt", nlp_results)
+
+    character_adjectives = characteristics(all_entities, list(nlp_results.iter_tokens()))
+    character_protagonist = character_importance(all_entities, list(nlp_results.iter_tokens()))
+    relationship_weights = weights_of_links(all_entities, list(nlp_results.iter_tokens()))
+    relationship_class = link_classification(all_entities, list(nlp_results.iter_tokens()))
+
+    character_sentiment = analyser.character_sentiment(text, all_entities)
+
+
+    # Save the result to a CSV file
+    with open("visualisation/data/characters/" + title + ".csv", "w", newline="", encoding='UTF8') as csvfile:
+        writer = csv.writer(csvfile)
+        for character in all_entities:
+            row = [character, character_sentiment[character], character_protagonist[character]] + character_adjectives[character]
+            writer.writerow(row)
+
+    with open("visualisation/data/relationships/" + title + ".csv", "w", newline="", encoding='UTF8') as csvfile:
+        writer = csv.writer(csvfile)
+        for pair in relationship_class:
+            pair_w = pair
+            if pair not in relationship_weights:
+                pair_w = (pair[1], pair[0])
+                if pair_w not in relationship_weights:
+                    relationship_weights[pair_w] = ""
+            writer.writerow([pair[0], pair[1], relationship_class[pair], relationship_weights[pair_w]])
+
+
+stories_path = "data/farytales/stories/"
+for story in os.listdir(stories_path)[77:]:
+    print(story)
+    with open(stories_path + story, "r", encoding='utf8') as file:
+        text = file.read()
+        analyse_story(story[:-4], text)
