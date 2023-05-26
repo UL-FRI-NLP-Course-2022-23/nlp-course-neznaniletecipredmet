@@ -29,6 +29,21 @@ From https://www.clarin.si/repository/xmlui/handle/11356/1773 download the model
 
 The output of the function is the modified dictionary of the entities and its starting/ending positions.
 
+### Character anaylsis
+In the next four functions, the parameters include "entity_dict" and "doc_tokens". The "entity_dict" is a dictionary of entities for keys and list of occurences as value. The "doc_tokens" are the tokens we get from classla model.
+
+* characteristics(entity_dict, doc_tokens, occurrences=3, neighborhood=3)
+The parameter "occurrences" takes first n occurences of an entity and "neighborhood" is the parameter of how many words before and after it checks. Function returns the characteristics (adjectives) of a entities in the story. 
+
+* weights_of_links(entity_dict, doc_tokens)
+Function returns the weight of a link between two entities regarding on the normalized number of occurances together.
+
+* character_importance(entity_dict, doc_tokens)
+Function returns the importance of a character depending on the number of ocuurances in the story and the importance of links with other characters.
+
+* link_classification(entity_dict, doc_tokens)
+Function returns the value between -5 and +5, which represent either bad or good relation between two characters from the story.
+
 ### Visualization
 To initiate the visualization, access your terminal and navigate to the directory where the project is stored (*nlp-course-neznaniletecipredmet*). Execute the command `python -m http.server 8000` and proceed to open your preferred web browser and access `http:localhost:8000`.
 
@@ -49,9 +64,5 @@ ner words recall: (0.0, 0.0)
 
 
 # TODOs:
-* Jana add coreference module to repo
-* Implement the relationship extraction
-* Implement the relationship classification
-* Implement character classification
 * Implement the protagonist classification
 * Implement character feature extraction
