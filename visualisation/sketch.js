@@ -19,7 +19,7 @@ let secondFont = 'Arial';
 let bubbleSize = 100;
 
 function preload() {
-    title = 'Zlata_ptica'
+    title = 'Ko_bi_bilo_vedno_tako'
     let charactersTable = loadTable('./data/characters/' + title + '.csv', 'csv', () => {
         for(let i = 0; i < charactersTable.getRowCount(); i++) {
             characters.push(charactersTable.getString(i,0));
@@ -78,6 +78,12 @@ function draw() {
         let minY = char1;
         if (characterCoordinates[char1][0] > characterCoordinates[char2][0]) minX = char2;
         if (characterCoordinates[char1][1] > characterCoordinates[char2][1]) minY = char2;
+        let text_x = characterCoordinates[minX][0];
+        let text_y = characterCoordinates[minY][1];
+        let text_width = Math.abs(characterCoordinates[char1][0] - characterCoordinates[char2][0]);
+        if (text_width < 50) {text_width = 50; text_x = text_x - 25;}
+        let text_height = Math.abs(characterCoordinates[char1][1] - characterCoordinates[char2][1]);
+        if (text_height < 20) {text_height = 20; text_y = text_y - 10;}
 
         stroke(200);
         if (type > 1) {rel = "zaveznik";stroke(100, 255, 100, 100 - 100*Math.abs(type_normalised));}
@@ -93,7 +99,7 @@ function draw() {
         //rotate(lineAngle);
         textAlign(CENTER, CENTER);
         //translate(lineCenterX,lineCenterY);
-        text(rel, characterCoordinates[minX][0], characterCoordinates[minY][1], Math.abs(characterCoordinates[char1][0] - characterCoordinates[char2][0]), Math.abs(characterCoordinates[char1][1] - characterCoordinates[char2][1]))
+        text(rel, text_x, text_y, text_width, text_height)
         //text(rel, 300, 300, 500, 500);
         //text(rel, lineCenterX, lineCenterY, 300, 30);
         //text(rel, characterCoordinates[char1][0], characterCoordinates[char1][1]-8, lineLength, 16);
