@@ -47,6 +47,9 @@ Function returns the value between -5 and +5, which represent either bad or good
 ### Visualization
 To initiate the visualization, access your terminal and navigate to the directory where the project is stored (*nlp-course-neznaniletecipredmet*). Execute the command `python -m http.server 8000` and proceed to open your preferred web browser and access `http:localhost:8000`.
 
+### Character sentiment
+The sentiment of the character is predicted with a trained model saved in `./models`, using the sentence context. An example of usage can be seen in the test.ipynb file located in the root directory.
+
 ## Example results
 
 The following results were obtained for the story *Janko in Metka*.
