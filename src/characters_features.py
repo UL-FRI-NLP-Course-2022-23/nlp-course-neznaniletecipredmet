@@ -1,11 +1,11 @@
 import os
 import json
 import classla
+from collections import defaultdict
 
-
-def characteristics(coref_dict, doc_tokens, occurrences=3, neighborhood=3, deviation=0):
+def characteristics(entity_dict, doc_tokens, occurrences=3, neighborhood=3, deviation=0):
     characteristics = {}
-    for key, value in coref_dict.items():
+    for key, value in entity_dict.items():
         neighbors = []
         first_three = value[:occurrences]  # prvih N pojavitev samostalnika
         for i, j in first_three:
@@ -19,11 +19,11 @@ def characteristics(coref_dict, doc_tokens, occurrences=3, neighborhood=3, devia
     return characteristics
 
 
-def weights_of_links(coref_dict, doc_tokens):
+def weights_of_links(entity_dict, doc_tokens):
     pairs = {}
     connected = []
     for token in doc_tokens:
-        character = [key for key, value in coref_dict.items() for i, j in value if token.start_char >= i and token.end_char <= j]
+        character = [key for key, value in entity_dict.items() for i, j in value if token.start_char >= i and token.end_char <= j]
         if len(character) != 0:
             connected.append(character[0])
         if token.words[0].upos == 'PUNCT' and token.text != ",":
@@ -38,11 +38,11 @@ def weights_of_links(coref_dict, doc_tokens):
     return {key: value / S for key, value in pairs.items()}
 
 
-def character_importance(coref_dict, doc_tokens):
+def character_importance(entity_dict, doc_tokens):
     importance = {}
-    weights = weights_of_links(coref_dict, doc_tokens)
-    S = sum({key: len(value) for key, value in coref_dict.items()}.values())
-    for key, value in coref_dict.items():
+    weights = weights_of_links(entity_dict, doc_tokens)
+    S = sum({key: len(value) for key, value in entity_dict.items()}.values())
+    for key, value in entity_dict.items():
         w = sum([v for (k1, k2), v in weights.items() if k1 == key or k2 == key])
         importance[key] = (len(value) / S) + w
     # normalized
@@ -50,11 +50,11 @@ def character_importance(coref_dict, doc_tokens):
     return {key: value / S2 for key, value in importance.items()}
 
 
-def link_classification(coref_dict, doc_tokens):
-    links = {}
+def link_classification(entity_dict, doc_tokens):
+    links = defaultdict(list)
     connected, verbs = set(), []
     for token in doc_tokens:
-        character = [key for key, value in coref_dict.items() for i, j in value if
+        character = [key for key, value in entity_dict.items() for i, j in value if
                      token.start_char >= i and token.end_char <= j]
         if len(character) != 0:
             connected.add(character[0])
@@ -62,25 +62,33 @@ def link_classification(coref_dict, doc_tokens):
             verbs.append(token.words[0].lemma)
         if token.words[0].upos == 'PUNCT' and token.text != ",":
             if len(connected) > 1:
-                links[tuple(connected)] = verbs
+                connected = connected
+                if len(connected) > 2:
+                    res = [(a, b) for idx, a in enumerate(connected) for b in connected[idx + 1:]]
+                    for i in res:
+                        i.sort()
+                        links[i].extend(verbs)
+                links[tuple(sorted(connected))].extend(verbs)
             connected, verbs = set(), []
 
     afinn = {}
-    with open("../src/Slovene_sentiment_lexicon_JOB.txt", encoding="utf8") as file:
+    with open("./src/Slovene_sentiment_lexicon_JOB.txt", encoding="utf8") as file:
         lines = [line for line in file]
 
     for l in lines:
         afinn[l.split()[0]] = l.split()[3]
 
-    affin={}
+    links = dict(links)
+    affin = {}
     for l in links:
+        print(l, links[l])
         summ = 0
         length = 0
         for i in links[l]:
             if i in afinn:
-                length +=1
+                length += 1
                 summ += float(afinn[i])
-        affin[l] = 0 if length==0 else summ/length
+        affin[l] = 0 if length == 0 else summ / length
 
     return affin
 
