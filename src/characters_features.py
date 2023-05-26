@@ -3,13 +3,13 @@ import json
 import classla
 from collections import defaultdict
 
-def characteristics(entity_dict, doc_tokens, occurrences=3, neighborhood=3, deviation=0):
+def characteristics(entity_dict, doc_tokens, occurrences=3, neighborhood=3):
     characteristics = {}
     for key, value in entity_dict.items():
         neighbors = []
         first_three = value[:occurrences]  # prvih N pojavitev samostalnika
         for i, j in first_three:
-            lst = [(ix, x) for ix, x in enumerate(doc_tokens) if x.start_char >= i - deviation and x.end_char <= j + deviation]
+            lst = [(ix, x) for ix, x in enumerate(doc_tokens) if x.start_char >= i  and x.end_char <= j]
             for ids, s in lst:
                 neighbors.extend(
                     [doc_tokens[x] for x in range(ids - neighborhood, ids + neighborhood + 1) if x >= 0 and x != ids])
