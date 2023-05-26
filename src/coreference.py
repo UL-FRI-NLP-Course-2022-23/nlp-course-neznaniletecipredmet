@@ -147,10 +147,7 @@ def coref_mentions(input, threshold, return_singletons=False):
     }
 
 
-def coreference(text, filename, trust=0.5, window_size=1100, offset=550, deviation=2):
-    with open("../data/farytales/ner_output2/" + filename+'.json', encoding="utf-8") as json_file:
-        extraction = json.load(json_file)
-
+def coreference(text, extraction, trust=0.5, window_size=1100, offset=550, deviation=2):
     start_offset = 0
     while start_offset < len(text):
         snip = text[start_offset: min(start_offset + window_size, len(text)) - 1]
@@ -201,9 +198,12 @@ def run_all():
         f = os.path.join(directory, filename)
         with open(f, encoding="utf8") as file:
             text = file.read()
-        name = os.path.splitext(filename)[0]
 
-        result = coreference(remove_new_lines(text), name, trust=0.6)
+        name = os.path.splitext(filename)[0]
+        with open("../data/farytales/ner_output2/" + name+'.json', encoding="utf-8") as json_file:
+            extraction = json.load(json_file)
+
+        result = coreference(remove_new_lines(text), extraction, trust=0.6)
         with open("../data/farytales/coreference/"+name+".json", "w", encoding="utf-8") as outfile:
             json.dump(result, outfile, ensure_ascii=False)
 
