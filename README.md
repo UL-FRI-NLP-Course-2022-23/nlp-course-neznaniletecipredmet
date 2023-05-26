@@ -45,7 +45,10 @@ Function returns the importance of a character depending on the number of ocuura
 Function returns the value between -5 and +5, which represent either bad or good relation between two characters from the story.
 
 ### Visualization
-To initiate the visualization, access your terminal and navigate to the directory where the project is stored (*nlp-course-neznaniletecipredmet*). Execute the command `python -m http.server 8000` and proceed to open your preferred web browser and access `http:localhost:8000`.
+To create input files for visualisation run `test_workflow.py`. In `visualisation/sketch.js` change variable *title* to the name of the story you want to process.
+
+Visualisation can be executed either in WebStorm or using a simple Python server.
+To initiate it with Python server, access your terminal and navigate to the directory where the project is stored (*nlp-course-neznaniletecipredmet/visualisation*). Execute the command `python -m http.server 8000`, proceed to open your preferred web browser and access `http:localhost:8000`.
 
 ### Character sentiment
 The sentiment of the character is predicted with a trained model saved in `./models`, using the sentence context. An example of usage can be seen in the test.ipynb file located in the root directory.
