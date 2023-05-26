@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import os
-from analyse import analyse_story
+import csv
+from analysis import analyse_story
 
 app = Flask(__name__)
 
@@ -18,27 +19,29 @@ def process():
     # Run your Python script with the input and get the result
     analyse_story(text_input)
 
-    # Save the result to a CSV file
-    # with open("static/data/characters.csv", "w", newline="", encoding='UTF8') as csvfile:
-    #     writer = csv.writer(csvfile)
-    #     for character in result:
-    #         writer.writerow([character, 0.5, 0.5])
-    #
-    # with open("static/data/relationships.csv", "w", newline="", encoding='UTF8') as csvfile:
-    #     writer = csv.writer(csvfile)
-    #     for character in result:
-    #         for character2 in result:
-    #             if character != character2:
-    #                 writer.writerow([character, character2, "", 0.5])
-
     return jsonify({"success": True})
 
 
-@app.route("/getFiles")
-def get_files():
-    folder_path = "../data/fairytales/stories"
-    file_names = os.listdir(folder_path)
-    return jsonify(file_names)
+# @app.route("/getFiles", methods=["POST"])
+# def get_files():
+#     folder_path = "../data/fairytales/stories"
+#     file_names = os.listdir(folder_path)
+#     return jsonify(file_names)
+
+
+@app.route("/example", methods=["POST"])
+def example():
+    for name in ["characters", "relationships"]:
+        to_read = "static/data/farytales_" + name + ".csv"
+        to_write = "static/data/" + name + ".csv"
+        with open(to_read, newline="", encoding='UTF8') as to_read_fp:
+            with open(to_write, "w", newline="", encoding='UTF8') as to_write_fp:
+                reader = csv.reader(to_read_fp)
+                writer = csv.writer(to_write_fp)
+                for row in reader:
+                    writer.writerow(row)
+
+    return jsonify({"success": True})
 
 
 if __name__ == "__main__":

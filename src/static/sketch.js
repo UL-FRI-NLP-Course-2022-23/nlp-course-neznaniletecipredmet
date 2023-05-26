@@ -19,7 +19,6 @@ let secondFont = 'Arial';
 let bubbleSize = 100;
 
 function preload() {
-    console.log("PATH:", window.location);
     let charactersTable = loadTable('static/data/characters.csv', 'csv', () => {
         for(let i = 0; i < charactersTable.getRowCount(); i++) {
             characters.push(charactersTable.getString(i,0));
@@ -35,7 +34,6 @@ function preload() {
             characterTraits[characters[i]] = traits;
         }
     });
-    console.log("CHARACTERS:", characters);
 
     let relationshipsTable = loadTable('static/data/relationships.csv', 'csv', () => {
         for(let i = 0; i < relationshipsTable.getRowCount(); i++) {
